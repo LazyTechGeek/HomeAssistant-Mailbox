@@ -77,7 +77,7 @@ actions:
 ```yaml
 alias: Mailbox - Post Detected (PIR) + (Door)
 description: Notify mail arrived when PIR detects motion and reset mailbox status when door opened
-mode: single
+mode: parallel
 triggers:
   - trigger: state
     entity_id:
