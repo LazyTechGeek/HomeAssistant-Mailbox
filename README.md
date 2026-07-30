@@ -3,23 +3,31 @@ Home Assistant Mailbox
 
 ## Automations
 
-### Option A (Flap)
+### Option A (Flap) + (Door)
 ```yaml
-alias: Mailbox - Post Detected (Flap)
+alias: Mailbox - Post Detected (Flap) + (Door)
 description: Notify when mail arrives using a mailbox flap sensor and reset mailbox status when the collection door is opened.
 mode: single
 triggers:
+
+  # Trigger 1 - Mail has been delivered
+  # Replace the entity below with your mailbox flap contact sensor.
+
   - trigger: state
     entity_id:
-      - binary_sensor.mailbox_flap_contact
+      - binary_sensor.ENTER_YOUR_MAILBOX_FLAP_SENSOR
     id: "1"
     from:
       - "off"
     to:
       - "on"
+
+  # Trigger 2 - Mail has been collected
+  # Replace the entity below with your mailbox door contact sensor.
+
   - trigger: state
     entity_id:
-      - binary_sensor.mailbox_door_contact
+      - binary_sensor.ENTER_YOUR_MAILBOX_DOOR_SENSOR
     id: "2"
     from:
       - "off"
@@ -28,6 +36,10 @@ triggers:
 conditions: []
 actions:
   - choose:
+
+  # Mail has been collected
+  # Turn ON the mailbox full input boolean.
+
       - conditions:
           - condition: trigger
             id:
@@ -36,8 +48,12 @@ actions:
           - action: input_boolean.turn_on
             metadata: {}
             target:
-              entity_id: input_boolean.mailbox_full
+              entity_id: input_boolean.ENTER_YOUR_MAILBOX_FULL_BOOLEAN
             data: {}
+            
+  # Mail has been collected
+  # Turn OFF the mailbox full input boolean.
+      
       - conditions:
           - condition: trigger
             id:
@@ -46,7 +62,7 @@ actions:
           - action: input_boolean.turn_off
             metadata: {}
             target:
-              entity_id: input_boolean.mailbox_full
+              entity_id: input_boolean.ENTER_YOUR_MAILBOX_FULL_BOOLEAN
             data: {}
 ```
 
