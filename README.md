@@ -72,9 +72,13 @@ alias: Mailbox - Post Detected (PIR)
 description: "Notify when mail arrives using a PIR sensor. Manual mailbox reset required after collecting mail"
 mode: single
 triggers:
+
+  # Trigger - Mail has been delivered
+  # Replace the entity below with your mailbox PIR sensor.
+
   - trigger: state
     entity_id:
-      - binary_sensor.mailbox_motion_occupancy
+      - binary_sensor.ENTER_YOUR_MAILBOX_PIR_SENSOR
     from:
       - "off"
     to:
@@ -82,10 +86,14 @@ triggers:
     id: "1"
 conditions: []
 actions:
+
+  # Mail has been delivered
+  # Turn ON the mailbox full input boolean.
+
   - action: input_boolean.turn_on
     metadata: {}
     target:
-      entity_id: input_boolean.mailbox_full
+      entity_id: input_boolean.ENTER_YOUR_MAILBOX_FULL_BOOLEAN
     data: {}
 ```
 
