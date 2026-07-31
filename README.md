@@ -295,8 +295,8 @@ substitutions:
   # 1. DEVICE SETTINGS - Change these to match your device
   ############################################################
 
-  name: your-device-name
-  friendly_name: YOUR_DEVICE_NAME
+  name: YOUR_DEVICE_NAME
+  friendly_name: YOUR FRIENDLY DEVICE NAME
   api_encryption_key: "YOUR_API_ENCRYPTION_KEY"
   ota_password: "YOUR_OTA_PASSWORD"
   ap_ssid: "YOUR_FALLBACK_HOTSPOT"
