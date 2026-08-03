@@ -1,11 +1,20 @@
-# HomeAssistant-Mailbox
-Home Assistant Mailbox
 
 
 ## 🖨️ 3D Print Files
 - [Zigbee Sensor Mount Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_tight.3mf)
+- [Zigbee Sensor Mount Mirrored Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_mirrored_tight.3mf)
+- [Zigbee Sensor Mount Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_loose.3mf)
+- [Zigbee Sensor Mount Mirrored Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_mirrored_loose.3mf)
 
+- [Magnet Mount Side Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_loose.3mf)
+- [Magnet Mount Side Mirrored Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_mirrored_loose.3mf)
+- [Magnet Mount Top Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_loose.3mf)
+- [Magnet Mount Top Mirrored Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_mirrored_loose.3mf)
 
+- [Magnet Mount Side Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_tight.3mf)
+- [Magnet Mount Side Mirrored tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_mirrored_tight.3mf)
+- [Magnet Mount Top Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_tight.3mf)
+- [Magnet Mount Top Mirrored Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_mirrored_tight.3mf)
 
 ## Automations
 
