@@ -38,7 +38,7 @@ Desk Mailbox Model
 
 ## Automations
 
-### Option A (Flap) + (Door)
+### Solution 1 (Flap) + (Door)
 ```yaml
 alias: Mailbox - Post Detected (Flap) + (Door)
 description: Notify when mail arrives using a mailbox flap sensor and reset mailbox status when the collection door is opened.
@@ -101,7 +101,7 @@ actions:
             data: {}
 ```
 
-### Option B (PIR)
+### Solution 2 (PIR)
 ```yaml
 alias: Mailbox - Post Detected (PIR)
 description: "Notify when mail arrives using a PIR sensor. Manual mailbox reset required after collecting mail"
@@ -132,7 +132,7 @@ actions:
     data: {}
 ```
 
-### Option C (PIR + Door)
+### Solution 3 (PIR + Door)
 ```yaml
 alias: Mailbox - Post Detected (PIR) + (Door)
 description: Notify when mail arrives using a PIR sensor and reset mailbox status when the collection door is opened.
@@ -237,92 +237,12 @@ actions:
             data: {}
 ```
 
-### Mailbox - Desk Display Integration
-```yaml
-alias: Mailbox - Desk Display Integration
-description: >-
-  Synchronises the Home Assistant Mailbox Full helper with the desk display mailbox, keeping both states in sync
-  opened
-mode: single
-triggers:
-  - trigger: state
-    entity_id:
-      - input_boolean.mailbox_full
-    from:
-      - "off"
-    to:
-      - "on"
-    id: "1"
-  - trigger: state
-    entity_id:
-      - input_boolean.mailbox_full
-    from:
-      - "on"
-    id: "2"
-    to:
-      - "off"
-  - trigger: state
-    entity_id:
-      - switch.bedroom_mailbox_notification_mail_presence
-    from:
-      - "off"
-    id: "3"
-    to:
-      - "on"
-  - trigger: state
-    entity_id:
-      - switch.bedroom_mailbox_notification_mail_presence
-    from:
-      - "on"
-    id: "4"
-    to:
-      - "off"
-conditions: []
-actions:
-  - choose:
-      - conditions:
-          - condition: trigger
-            id:
-              - "1"
-        sequence:
-          - action: switch.turn_on
-            metadata: {}
-            target:
-              entity_id: switch.bedroom_mailbox_notification_mail_presence
-            data: {}
-      - conditions:
-          - condition: trigger
-            id:
-              - "2"
-        sequence:
-          - action: switch.turn_off
-            metadata: {}
-            target:
-              entity_id: switch.bedroom_mailbox_notification_mail_presence
-            data: {}
-      - conditions:
-          - condition: trigger
-            id:
-              - "3"
-        sequence:
-          - action: input_boolean.turn_on
-            metadata: {}
-            target:
-              entity_id: input_boolean.mailbox_full
-            data: {}
-      - conditions:
-          - condition: trigger
-            id:
-              - "4"
-        sequence:
-          - action: input_boolean.turn_off
-            metadata: {}
-            target:
-              entity_id: input_boolean.mailbox_full
-            data: {}
-```
+# Smart Mailbox Display Model (Part 2)
 
-## BONUS CONTENT (MODEL MAILBOX)
+## video comming soon:
+▶️ [VIDEO PENDING]()
+
+### ESPHome Configuration
 
 ```yaml
 substitutions:
@@ -553,4 +473,90 @@ binary_sensor:
       - switch.turn_off: mail_presence
 
 web_server:
+```
+
+
+### Desk Mailbox Display Automation
+```yaml
+alias: Mailbox - Desk Display Integration
+description: >-
+  Synchronises the Home Assistant Mailbox Full helper with the desk display mailbox, keeping both states in sync
+  opened
+mode: single
+triggers:
+  - trigger: state
+    entity_id:
+      - input_boolean.mailbox_full
+    from:
+      - "off"
+    to:
+      - "on"
+    id: "1"
+  - trigger: state
+    entity_id:
+      - input_boolean.mailbox_full
+    from:
+      - "on"
+    id: "2"
+    to:
+      - "off"
+  - trigger: state
+    entity_id:
+      - switch.bedroom_mailbox_notification_mail_presence
+    from:
+      - "off"
+    id: "3"
+    to:
+      - "on"
+  - trigger: state
+    entity_id:
+      - switch.bedroom_mailbox_notification_mail_presence
+    from:
+      - "on"
+    id: "4"
+    to:
+      - "off"
+conditions: []
+actions:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id:
+              - "1"
+        sequence:
+          - action: switch.turn_on
+            metadata: {}
+            target:
+              entity_id: switch.bedroom_mailbox_notification_mail_presence
+            data: {}
+      - conditions:
+          - condition: trigger
+            id:
+              - "2"
+        sequence:
+          - action: switch.turn_off
+            metadata: {}
+            target:
+              entity_id: switch.bedroom_mailbox_notification_mail_presence
+            data: {}
+      - conditions:
+          - condition: trigger
+            id:
+              - "3"
+        sequence:
+          - action: input_boolean.turn_on
+            metadata: {}
+            target:
+              entity_id: input_boolean.mailbox_full
+            data: {}
+      - conditions:
+          - condition: trigger
+            id:
+              - "4"
+        sequence:
+          - action: input_boolean.turn_off
+            metadata: {}
+            target:
+              entity_id: input_boolean.mailbox_full
+            data: {}
 ```
