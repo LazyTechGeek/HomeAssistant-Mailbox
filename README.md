@@ -19,7 +19,7 @@ Magnet Mounts (Loose)
 - [Magnet Mount Top Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_tight.3mf)
 - [Magnet Mount Top Mirrored Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_mirrored_tight.3mf)
 
-Desk mailbox Model
+Desk Mailbox Model
 - [Mailbox Base](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_base.3mf)
 - [mailbox Pole](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_pole.3mf)
 - [mailbox Body](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_body.3mf)
