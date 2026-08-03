@@ -19,6 +19,18 @@ Magnet Mounts (Loose)
 - [Magnet Mount Top Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_tight.3mf)
 - [Magnet Mount Top Mirrored Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_mirrored_tight.3mf)
 
+Desk mailbox Model
+- [Mailbox Base](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_base.3mf)
+- [mailbox Pole](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_pole.3mf)
+- [mailbox Body](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_body.3mf)
+- [Flag](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/flag.3mf)
+- [mailbox Base Lid](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_base_lid.3mf)
+- [mailbox Body](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_body.3mf)
+- [mailbox Pole](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_pole.3mf)
+- [button Body](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_body.3mf)
+- [Button Cap Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_cap_loose.3mf)
+- [Button Cap Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_cap_tight.3mf)
+
 ## Automations
 
 ### Option A (Flap) + (Door)
