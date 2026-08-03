@@ -560,3 +560,9 @@ actions:
               entity_id: input_boolean.mailbox_full
             data: {}
 ```
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+See the [LICENSE.md](LICENSE.md) file for full details.
