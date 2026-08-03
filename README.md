@@ -237,7 +237,7 @@ actions:
             data: {}
 ```
 
-# Smart Mailbox Display Model (Part 2)
+## Smart Mailbox Desk Display
 
 ## video comming soon:
 ▶️ [VIDEO PENDING]()
