@@ -476,7 +476,7 @@ web_server:
 ```
 
 
-### Desk Mailbox Display Automation
+### Home Assistant Automation
 ```yaml
 alias: Mailbox - Desk Display Integration
 description: >-
