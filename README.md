@@ -34,6 +34,43 @@ Desk Mailbox Model
 - [Button Cap Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_cap_loose.3mf)
 - [Button Cap Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_cap_tight.3mf)
 
+
+## Helpers Required
+
+### For Solutions 1, 2 & 3
+
+### Mailbox Full
+
+- **Type:** Toggle
+- **Icon:** `mdi:email-fast`
+- **Entity ID:** `input_boolean.mailbox_full`
+
+### Mailbox Status
+
+- **Type:** Template → Sensor
+- **Icon:** `mdi:email-search-outline`
+- **Entity ID:** `sensor.mailbox_status`
+
+**Template:**
+
+```jinja
+{% if is_state('input_boolean.mailbox_full', 'on') %}
+Full
+{% else %}
+Empty
+{% endif %}
+```
+
+---
+
+### Additional Helper for Solution 3 (PIR Motion Sensor + Door Sensor)
+
+### Mailbox Door Opened
+
+- **Type:** Toggle
+- **Icon:** `mdi:mailbox-open-outline`
+- **Entity ID:** `input_boolean.mailbox_door_opened`
+
 ## Automations
 
 ### Solution 1 (Flap) + (Door)
