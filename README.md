@@ -1,4 +1,9 @@
+# Home Assistant Smart Mailbox
 
+Automate your external mailbox with Home Assistant using Zigbee contact sensors or a PIR motion sensor. This repository contains the Home Assistant automations, ESPHome code, wiring diagram, and optional 3D printable files featured in the tutorial.
+
+## Watch the video here:
+▶️ [How to Make You Mailbox Smart with Home Assistant](https://youtu.be/gtcDuPuRiF4)
 
 ## 🖨️ 3D Print Files
 Zigbee Sensor Mounts
