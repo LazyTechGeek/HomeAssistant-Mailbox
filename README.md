@@ -12,13 +12,13 @@ Zigbee Sensor Mounts
 - [Zigbee Sensor Mount Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_loose.3mf)
 - [Zigbee Sensor Mount Mirrored Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_mirrored_loose.3mf)
 
-Magnet Mounts (Tight)
+Magnet Mounts (Loose)
 - [Magnet Mount Side Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_loose.3mf)
 - [Magnet Mount Side Mirrored Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_mirrored_loose.3mf)
 - [Magnet Mount Top Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_loose.3mf)
 - [Magnet Mount Top Mirrored Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_mirrored_loose.3mf)
 
-Magnet Mounts (Loose)
+Magnet Mounts (Tight)
 - [Magnet Mount Side Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_tight.3mf)
 - [Magnet Mount Side Mirrored tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_side_mirrored_tight.3mf)
 - [Magnet Mount Top Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/magnet_mount_top_tight.3mf)
@@ -31,8 +31,6 @@ Desk Mailbox Model
 - [Flag](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/flag.3mf)
 - [mailbox Base Lid](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_base_lid.3mf)
 - [mailbox Body](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_body.3mf)
-- [mailbox Pole](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/mailbox_pole.3mf)
-- [button Body](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_body.3mf)
 - [Button Cap Loose](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_cap_loose.3mf)
 - [Button Cap Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/button_cap_tight.3mf)
 
@@ -237,10 +235,10 @@ actions:
             data: {}
 ```
 
-## Smart Mailbox Desk Display
+## Bonus Project – Smart Mailbox Desk Display
 
-## video comming soon:
-▶️ [VIDEO PENDING]()
+### Tutorial Video:
+▶️ [Coming Soon]()
 
 ### ESPHome Configuration
 
