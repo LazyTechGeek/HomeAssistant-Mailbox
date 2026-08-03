@@ -235,6 +235,8 @@ actions:
             data: {}
 ```
 
+---
+
 ## Bonus Project – Smart Mailbox Desk Display
 
 ### Tutorial Video:
