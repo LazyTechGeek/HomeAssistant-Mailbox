@@ -5,7 +5,7 @@ Home Assistant Mailbox
 ## 🖨️ 3D Print Files
 - [Zigbee Sensor Mount Tight](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/zigbee_sensor_mount_tight.3mf)
 
-
+https://github.com/LazyTechGeek/HomeAssistant-Mailbox/blob/main/3d_prints/zigbee_sensor_mount_tight.3mf
 
 - [IR RF Hub Enclosure Base](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/ir_rf_hub_enclosure_base.3mf)
 - [IR RF Hub Enclosure Base](https://raw.githubusercontent.com/LazyTechGeek/HomeAssistant-Mailbox/main/3d_prints/ir_rf_hub_enclosure_base.3mf)
