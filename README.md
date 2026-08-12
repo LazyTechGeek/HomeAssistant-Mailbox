@@ -312,9 +312,7 @@ esphome:
   friendly_name: ${friendly_name}
 
 esp8266:
-  board: nodemcuv2
-  framework:
-    version: recommended
+  board: d1_mini
 
 wifi:
   networks:
@@ -350,6 +348,8 @@ dfplayer:
 
 # Enable Home Assistant API
 api:
+  encryption:
+    key: ${api_encryption_key}
 
 # Define PWM output for servo
 output:
