@@ -516,11 +516,16 @@ web_server:
 ### Home Assistant Automation
 ```yaml
 alias: Mailbox - Desk Display Integration
+
 description: >-
-  Synchronises the Home Assistant Mailbox Full helper with the desk display mailbox, keeping both states in sync
-  opened
+  Synchronises the Home Assistant Mailbox Full helper with the desk display mailbox,
+  keeping both states in sync.
+
 mode: single
+
 triggers:
+
+  # Mail has been detected by the main mailbox automation
   - trigger: state
     entity_id:
       - input_boolean.mailbox_full
@@ -529,33 +534,43 @@ triggers:
     to:
       - "on"
     id: "1"
+
+  # Mailbox has been cleared / emptied
   - trigger: state
     entity_id:
       - input_boolean.mailbox_full
     from:
       - "on"
+    to:
+      - "off"
     id: "2"
-    to:
-      - "off"
+
+  # Desk display has been manually set to show mail present
   - trigger: state
     entity_id:
-      - switch.bedroom_mailbox_notification_mail_presence
+      - switch.ENTER_YOUR_MAILBOX_NOTIFICATION_MAIL_PRESENCE_SWITCH
     from:
       - "off"
+    to:
+      - "on"
     id: "3"
-    to:
-      - "on"
+
+  # Desk display has been manually reset
   - trigger: state
     entity_id:
-      - switch.bedroom_mailbox_notification_mail_presence
+      - switch.ENTER_YOUR_MAILBOX_NOTIFICATION_MAIL_PRESENCE_SWITCH
     from:
       - "on"
-    id: "4"
     to:
       - "off"
+    id: "4"
+
 conditions: []
+
 actions:
   - choose:
+
+      # If Home Assistant detects mail, activate the desk display
       - conditions:
           - condition: trigger
             id:
@@ -564,8 +579,10 @@ actions:
           - action: switch.turn_on
             metadata: {}
             target:
-              entity_id: switch.bedroom_mailbox_notification_mail_presence
+              entity_id: switch.ENTER_YOUR_MAILBOX_NOTIFICATION_MAIL_PRESENCE_SWITCH
             data: {}
+
+      # If the mailbox is cleared, reset the desk display
       - conditions:
           - condition: trigger
             id:
@@ -574,8 +591,10 @@ actions:
           - action: switch.turn_off
             metadata: {}
             target:
-              entity_id: switch.bedroom_mailbox_notification_mail_presence
+              entity_id: switch.ENTER_YOUR_MAILBOX_NOTIFICATION_MAIL_PRESENCE_SWITCH
             data: {}
+
+      # If the desk display is activated manually, update Home Assistant
       - conditions:
           - condition: trigger
             id:
@@ -586,6 +605,8 @@ actions:
             target:
               entity_id: input_boolean.mailbox_full
             data: {}
+
+      # If the desk display is manually reset, clear the Home Assistant helper
       - conditions:
           - condition: trigger
             id:
