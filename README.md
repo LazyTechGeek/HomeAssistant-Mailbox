@@ -274,10 +274,11 @@ actions:
 
 ---
 
-## Bonus Project – Smart Mailbox Desk Display
+## Smart Mailbox Desk Display
+The Smart Mailbox Desk Display integrates with Home Assistant to provide a physical notification when mail arrives, raising a miniature flag and playing an audio alert.
 
 ### Tutorial Video:
-▶️ [Coming Soon]()
+▶️ [How to Make a Mailbox Notification Display with Home Assistant](https://youtu.be/Ng9fOjFO47c)
 
 ### ESPHome Configuration
 
